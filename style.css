@@ -1,10 +1,15 @@
 body{
   margin: 0;
+  background: #2a2d4d;
 }
 rect:hover{
   fill:grey;
 }
 button{
-  background: linear-gradient(#4c73ce,#737a8b);
-  border-radius: 5px;
+  background: #fdeb90;
+  border-radius: 8px;
+  border: 1px solid #2a2d4d;
+}
+input{
+  background: grey;
 }

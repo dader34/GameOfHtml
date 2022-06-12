@@ -16,7 +16,8 @@
     <button onclick = "Start()">Start</button>
     <button onclick = "clearInterval(inter)">Stop</button>
     <button onclick = "clearboard()">Clear</button>
-    <button onclick = "gol()">Tick+</button>
+    <button onclick = "(()=>{gol();draw()})()">Tick+</button>
+    <button onclick = "(()=>{placingGliders=!placingGliders})()">Place Gliders</button>
     <input id = "ss" value = "1000">
   </body>
 </html>
