@@ -333,14 +333,11 @@ let inter = 0
 
 //function to get board moving in display
 const Start = () =>{
-  //try catch because it is input so text could be used
+  
+  //try to clear interval incase one is running
   try { clearInterval(inter) } catch (e) { }
-  try {
-    inter = setInterval(gol, parseInt(document.getElementById("ss").value))
-  } catch (e) {
-    //if text set 1 second frame draw times
-    inter = setInterval(gol, 1000)
-  }
+  //set interval of generation lifespan from input
+  inter = setInterval(gol, parseInt(document.getElementById("ss").value))
 }
 //function to reset board to blank
 const clearboard = () =>{

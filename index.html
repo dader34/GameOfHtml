@@ -18,6 +18,6 @@
     <button onclick = "clearboard()">Clear</button>
     <button onclick = "(()=>{gol();draw()})()">Tick+</button>
     <button onclick = "(()=>{placingGliders=!placingGliders})()">Place Gliders</button>
-    <input id = "ss" value = "1000">
+    <input id = "ss"  value = "1000" type="number" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
   </body>
 </html>
